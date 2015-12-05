@@ -10,3 +10,6 @@
 [submodule "poky"]
 	path = poky
 	url = https://git.yoctoproject.org/git/poky.git
+[submodule "openembedded-core"]
+	path = openembedded-core
+	url = https://github.com/openembedded/openembedded-core.git

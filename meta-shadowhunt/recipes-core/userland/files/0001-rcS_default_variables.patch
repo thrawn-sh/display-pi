@@ -1,0 +1,13 @@
+diff --git i/interface/vmcs_host/linux/vcfiled/etc/init.d/vcfiled w/interface/vmcs_host/linux/vcfiled/etc/init.d/vcfiled
+index afe7cbc..c885fae 100755
+--- i/interface/vmcs_host/linux/vcfiled/etc/init.d/vcfiled
++++ w/interface/vmcs_host/linux/vcfiled/etc/init.d/vcfiled
+@@ -32,7 +32,7 @@ SCRIPTNAME=/etc/init.d/$NAME
+ [ -r /etc/default/$NAME ] && . /etc/default/$NAME
+ 
+ # Load the VERBOSE setting and other rcS variables
+-. /lib/init/vars.sh
++. /etc/default/rcS
+ 
+ # Define LSB log_* functions.
+ # Depend on lsb-base (>= 3.0-6) to ensure that this file is present.

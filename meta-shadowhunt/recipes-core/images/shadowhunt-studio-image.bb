@@ -18,4 +18,5 @@ IMAGE_INSTALL += " \
     ttf-bitstream-vera \
     xf86-video-modesetting \
     xserver-xorg-extension-glx \
+    mesa-megadriver \
     "

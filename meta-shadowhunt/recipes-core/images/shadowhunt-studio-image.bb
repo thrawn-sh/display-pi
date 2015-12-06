@@ -5,15 +5,8 @@ IMAGE_FEATURES += " x11-base "
 
 IMAGE_INSTALL += " \
     neard \
-    qtbase \
-    qtbase-fonts \
-    qtconnectivity \
-    qtmultimedia \
-    qtwebengine \
+    qtbase qtbase-fonts qtconnectivity qtmultimedia qtwebengine \
+    liberation-fonts ttf-bitstream-vera \
+    mesa-megadriver xserver-xorg-extension-glx xf86-video-modesetting \
     studio-system \
-    liberation-fonts \
-    ttf-bitstream-vera \
-    xf86-video-modesetting \
-    xserver-xorg-extension-glx \
-    mesa-megadriver \
     "

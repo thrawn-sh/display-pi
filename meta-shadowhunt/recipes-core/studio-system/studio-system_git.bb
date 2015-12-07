@@ -1,13 +1,13 @@
-DESCRIPTION = "studio-system application" 
-SECTION = "base" 
-LICENSE = "CLOSED" 
+DESCRIPTION = "studio-system application"
+SECTION = "base"
+LICENSE = "CLOSED"
 
 DEPENDS = "\
            log4cpp \
            qtbase \
            qtconnectivity \
            qtmultimedia \
-           qtwebengine \
+           qtwebkit \
           "
 
 SRC_URI = "git://scm.shadowhunt.de/studio-system.git;protocol=https;rev=0f8798fdcc62814bb7466440c0b866d667f3700d"

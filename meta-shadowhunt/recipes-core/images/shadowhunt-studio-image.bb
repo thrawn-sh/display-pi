@@ -5,8 +5,9 @@ IMAGE_FEATURES += " x11-base "
 
 IMAGE_INSTALL += " \
     neard \
-    qtbase qtbase-fonts qtconnectivity qtmultimedia qtwebengine \
+    qtbase-fonts \
+    ca-certificates \
     liberation-fonts ttf-bitstream-vera \
     mesa-megadriver xserver-xorg-extension-glx xf86-video-modesetting \
-    studio-system \
+    studio-system modules-raspberrypi2 \
     "

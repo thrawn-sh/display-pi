@@ -1,6 +1,6 @@
 SUMMARY = "Autoload modules during startup"
 SECTION = "base"
-LICENSE = "MIT"
+LICENSE = "CLOSED"
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 SRC_URI = "file://modules"

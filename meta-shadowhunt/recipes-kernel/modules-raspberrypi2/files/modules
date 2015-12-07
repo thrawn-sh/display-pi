@@ -1,5 +1,5 @@
 # hardware random number
-bcm_2708_rng
+bcm2708_rng
 
 # sound system
 snd_bcm2835

@@ -1,0 +1,1 @@
+f root utmp 0664 /var/log/lastlog none

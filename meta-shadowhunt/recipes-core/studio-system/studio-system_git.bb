@@ -10,7 +10,7 @@ DEPENDS = "\
            qtwebkit \
           "
 
-SRC_URI = "git://scm.shadowhunt.de/studio-system.git;protocol=https;rev=0f8798fdcc62814bb7466440c0b866d667f3700d"
+SRC_URI = "git://scm.shadowhunt.de/studio-system.git;protocol=https;rev=e6c26033370485a0a40cc399de5fc5ddf3ef1b66"
 
 S = "${WORKDIR}/git"
 

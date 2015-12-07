@@ -11,6 +11,6 @@ do_install_append () {
     install -d                               ${D}/${sysconfdir}/default/volatiles
     install -m 0644 ${WORKDIR}/99_shadowhunt ${D}/${sysconfdir}/default/volatiles
 
-    install -m 0700 -d                            ${D}/root/.ssh
-    install -m 0644    ${WORKDIR}/authorized_keys ${D}/root/.ssh/authorized_keys
+    install -m 0700 -d                            ${D}/home/root/.ssh
+    install -m 0600    ${WORKDIR}/authorized_keys ${D}/home/root/.ssh/authorized_keys
 }

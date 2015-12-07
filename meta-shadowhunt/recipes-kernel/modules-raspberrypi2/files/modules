@@ -1,0 +1,8 @@
+# hardware random number
+bcm_2708_rng
+
+# sound system
+snd_bcm2835
+
+# gpio access
+bcm2835_gpiomem

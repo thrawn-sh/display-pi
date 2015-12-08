@@ -4,6 +4,7 @@ include recipes-core/images/shadowhunt-basic-image.bb
 IMAGE_FEATURES += " x11 "
 
 IMAGE_INSTALL += " \
+    cronie \
     neard \
     qtbase-fonts \
     ca-certificates \

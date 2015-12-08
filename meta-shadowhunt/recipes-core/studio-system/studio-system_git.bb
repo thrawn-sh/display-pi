@@ -31,5 +31,5 @@ do_install_append_shadowhunt() {
     install -m 0755 "${WORKDIR}/session" "${D}/${sysconfdir}/mini_x/session"
 
     install -d                                "${D}/${sysconfdir}/cron.d"
-    install -m 0755 "${WORKDIR}/display.cron" "${D}/${sysconfdir}/cron.d/display"
+    install -m 0644 "${WORKDIR}/display.cron" "${D}/${sysconfdir}/cron.d/display"
 }

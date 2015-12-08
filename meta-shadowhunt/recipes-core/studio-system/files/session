@@ -3,19 +3,18 @@
 # {bouncer,counter,display}-000.example.net
 host_prefix=`hostname -f | cut -d- -f1`
 
-prefix="/usr/bin"
 case "${host_prefix}" in
     "bouncer")
-        binary="${prefix}/bouncer"
+        binary="/usr/bin/bouncer"
         parameter=""
     ;;
     "counter")
-        binary="${prefix}/counter"
+        binary="/usr/bin/counter"
         parameter=""
     ;;
     *)
-        # display
-        binary="${prefix}/display"
+        # display application as default / fallback
+        binary="/usr/bin/display"
         parameter="http://www.shadowhunt.de"
 
         # disable display power-management

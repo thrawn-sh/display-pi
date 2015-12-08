@@ -1,7 +1,7 @@
 # Base this image on core-image-minimal
 include recipes-core/images/shadowhunt-basic-image.bb
 
-IMAGE_FEATURES += " x11-base "
+IMAGE_FEATURES += " x11 "
 
 IMAGE_INSTALL += " \
     neard \

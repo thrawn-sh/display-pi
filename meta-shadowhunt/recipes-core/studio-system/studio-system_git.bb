@@ -18,6 +18,7 @@ SRC_URI = "git://scm.shadowhunt.de/studio-system.git;protocol=https;rev=e6c26033
 
 FILES_${PN} += " ${sysconfdir}/mini_x/session \
                  ${sysconfdir}/cron.d/display \
+                 ${sysconfdir}/default/studio-system \
                "
 
 S = "${WORKDIR}/git"
@@ -32,4 +33,7 @@ do_install_append_shadowhunt() {
 
     install -d                                "${D}/${sysconfdir}/cron.d"
     install -m 0644 "${WORKDIR}/display.cron" "${D}/${sysconfdir}/cron.d/display"
+
+    install -d                                 "${D}/${sysconfdir}/default"
+    install -m 0644 "${WORKDIR}/studio-system" "${D}/${sysconfdir}/default/studio-system"
 }

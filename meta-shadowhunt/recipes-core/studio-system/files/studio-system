@@ -1,0 +1,8 @@
+# url for bouncer application
+BOUNCER_URL="http://www.shadowhunt.de"
+
+# url for counter application
+COUNTER_URL="http://www.shadowhunt.de"
+
+# url for display application
+DISPLAY_URL="http://www.shadowhunt.de"

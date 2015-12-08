@@ -14,6 +14,7 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 SRC_URI = "git://scm.shadowhunt.de/studio-system.git;protocol=https;rev=e6c26033370485a0a40cc399de5fc5ddf3ef1b66 \
            file://display.cron \
            file://session \
+           file://studio-system \
           "
 
 FILES_${PN} += " ${sysconfdir}/mini_x/session \

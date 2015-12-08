@@ -4,19 +4,28 @@
 # ^^^^^^^^^^^^^^^^^^^^^^^^^ = DEVICE
 DEVICE=`hostname -f | cut -d- -f1`
 
+if [ -f /etc/default/studio-system ]; then
+    . /etc/default/studio-system
+fi
+
+# allow override on read-only root systems
+if [ -f /var/run/studio-system ]; then
+    . /var/run/studio-system
+fi
+
 case "${DEVICE}" in
     "bouncer")
-        binary="/usr/bin/bouncer"
-        parameter=""
+        BINARY="/usr/bin/bouncer"
+        PARAMETER=""
     ;;
     "counter")
-        binary="/usr/bin/counter"
-        parameter=""
+        BINARY="/usr/bin/counter"
+        PARAMETER=""
     ;;
     *)
         # display application as default / fallback
-        binary="/usr/bin/display"
-        parameter="http://www.shadowhunt.de"
+        BINARY="/usr/bin/display"
+        PARAMETER="${DISPLAY_URL}"
 
         # disable display power-management
         xset -display :0 -dpms
@@ -24,5 +33,5 @@ case "${DEVICE}" in
 esac
 
 # run program in background and window manager in foreground
-${binary} ${parameter} &
+${BINARY} ${PARAMETER} &
 exec matchbox-window-manager

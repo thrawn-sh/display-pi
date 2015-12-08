@@ -1,9 +1,10 @@
 #!/bin/sh
 
 # {bouncer,counter,display}-000.example.net
-host_prefix=`hostname -f | cut -d- -f1`
+# ^^^^^^^^^^^^^^^^^^^^^^^^^ = DEVICE
+DEVICE=`hostname -f | cut -d- -f1`
 
-case "${host_prefix}" in
+case "${DEVICE}" in
     "bouncer")
         binary="/usr/bin/bouncer"
         parameter=""

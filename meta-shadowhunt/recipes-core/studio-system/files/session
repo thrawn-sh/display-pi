@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# {bouncer,counter,display}-000.example.net
+host_prefix=`hostname -f | cut -d- -f1`
+
+prefix="/usr/bin"
+case "${host_prefix}" in
+    "bouncer")
+        binary="${prefix}/bouncer"
+        parameter=""
+    ;;
+    "counter")
+        binary="${prefix}/counter"
+        parameter=""
+    ;;
+    *)
+        # display
+        binary="${prefix}/display"
+        parameter="http://www.shadowhunt.de"
+
+        # disable display power-management
+        xset -display :0 -dpms
+    ;;
+esac
+
+# run program in background and window manager in foreground
+${binary} ${parameter} &
+exec matchbox-window-manager

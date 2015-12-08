@@ -1,0 +1,4 @@
+# reload the webpage every 5 minutes
+DISPLAY=:0
+
+*/5 * * * * root /usr/bin/dbus-send --session --dest=de.shadowhunt.display /browser de.shadowhunt.display.BrowserService.reload

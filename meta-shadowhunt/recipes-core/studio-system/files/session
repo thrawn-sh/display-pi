@@ -28,7 +28,10 @@ case "${DEVICE}" in
         PARAMETER="${DISPLAY_URL}"
 
         # disable display power-management
-        xset -display :0 -dpms
+        xset -dpms
+        # disable screensaver
+        xset s off
+        xset s 0 0
     ;;
 esac
 

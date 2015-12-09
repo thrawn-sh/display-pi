@@ -11,4 +11,5 @@ IMAGE_INSTALL += " \
     liberation-fonts ttf-bitstream-vera \
     mesa-megadriver xserver-xorg-extension-glx xf86-video-modesetting \
     studio-system modules-raspberrypi2 \
+    gstreamer1.0-plugins-base gstreamer1.0-plugins-bad gstreamer1.0-plugins-good \
     "

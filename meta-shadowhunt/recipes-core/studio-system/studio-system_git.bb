@@ -4,6 +4,7 @@ LICENSE = "CLOSED"
 
 DEPENDS = "\
            log4cpp \
+           networkmanager \
            qtbase \
            qtconnectivity \
            qtmultimedia \

@@ -7,3 +7,6 @@ cd poky
 cp ../../conf/* conf/
 
 bitbake --continue shadowhunt-basic-image
+
+# clean
+bitbake --cmd=clean shadowhunt-basic-image

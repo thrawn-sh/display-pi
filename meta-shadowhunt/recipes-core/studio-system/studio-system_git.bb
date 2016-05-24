@@ -8,7 +8,7 @@ DEPENDS = "\
            qtbase \
            qtconnectivity \
            qtmultimedia \
-           qtwebkit \
+           qtwebengine \
           "
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
